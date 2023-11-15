@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "[DEV] pro-fun | Saad"
+client_id = "35d729a024d6f8db340f198028dd87b4"
+application_url = "https://showtimes-faq-lu-controlling.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://showtimes-faq-lu-controlling.trycloudflare.com/auth/callback",
+  "https://showtimes-faq-lu-controlling.trycloudflare.com/auth/shopify/callback",
+  "https://showtimes-faq-lu-controlling.trycloudflare.com/api/auth/callback",
+  "https://showtimes-faq-lu-controlling.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "saad-checkout-ui-ext.myshopify.com"
